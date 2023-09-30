@@ -1,0 +1,258 @@
+
+
+.img1{
+    width: 300px;
+    margin-right:550px ;
+}
+
+.img2{
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-left: 130px;
+    border-radius: 12px;
+}
+
+.img3{
+    position: relative;
+    left: 680px;
+    width: 400px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 120px;
+    border-radius: 12px;
+}
+
+.container {
+    max-width: 1200px; /* Largura máxima do container */
+    margin: 0 auto; /* Centralizar o container na página */
+    padding: 20px; /* Espaçamento interno do container */
+    display: flex;
+    justify-content: flex-end; /* Alinhar a navbar à direita */
+      
+}
+
+.navbar {
+    margin-top: 45px;
+    text-align: left; /* Alinhar o texto à esquerda */   
+}
+
+.navbar-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;  
+}
+
+.navbar-list li {
+    display: inline; /* Fazer com que os itens da lista apareçam em linha */
+    margin-right: 20px; /* Espaçamento entre os itens da lista */   
+}
+
+.navbar-list li a {
+    text-decoration: none;
+    color: rgb(6, 196, 180); /* Cor do texto dos links */
+    font-weight: bold;
+}
+
+.efeito:hover{
+    color: aqua;
+    border-bottom: 3px solid aqua ;
+}
+
+.conteudo1{
+    display: flex;
+}
+.conteudo2{
+    display:flex;
+}
+.titulo1{
+    position: absolute;
+    padding-top: 45px;
+    left: 871px;
+    
+}
+.titulo2{
+    position: absolute;
+    padding-top: 65px;
+    left: 200px;
+}
+.paragrafo{
+    text-align: center;
+    margin-top: 30px;
+    margin-left:200px ;
+    margin-right: 200px;
+    font-weight: 500;
+    padding:50px;
+
+}
+.paragrafo3{
+    position: absolute;
+    text-align: center;
+    right: 730px;
+    margin-top: 50px;
+    margin-left:100px ;
+    margin-right: 100px;
+    font-weight: 500;
+    padding:50px;
+    
+}
+.back{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 200px;
+    padding-right:200px ;
+    display: flex;
+    background-color: rgba(128, 128, 128, 0.801);;
+}
+.card{
+    width: 200px;
+    margin-right: 200px;
+    text-align: center;
+    background:white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card2{
+    width: 200px;
+    margin-right: 200px;
+    text-align: center;
+    background:white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card3{
+    width: 200px;
+    text-align: center;
+    background:white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    width: 100%; 
+    height: 110px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(6, 196, 180);
+}
+
+footer a i{
+    margin-right: 20px;
+}
+
+/* Estilos para telas menores (responsivo) */
+    
+@media screen and (max-width: 375px) {
+   
+    .navbar-list {
+        width: 300px;
+        margin-right: 35px;
+        padding-top: 10px; /* Espaçamento superior */
+        
+    }
+    
+    .navbar-list li {
+        display: inline; /* Fazer com que os itens apareçam em bloco */
+        margin-bottom: 10px; /* Espaçamento entre os itens */
+    }
+
+    .conteudo1{
+        margin-left: 5px;
+        margin-right: 20px  ;
+        flex-direction: column;
+    }
+
+    .conteudo2{
+        margin-left: 5px;
+        margin-right: 20px  ;
+        flex-direction: column;
+    }
+
+    .img2{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .img3{
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+
+    .conteudo{
+        height: 600px;
+        padding: 15px;
+        align-items: center;
+    }
+
+    .titulo1{
+        position: absolute;
+        top:120px;
+        left: 80px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .titulo2{
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 1px;
+
+    }
+
+    .paragrafo{
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 15px;
+        margin-bottom: 30px;
+    }
+
+    .back{
+        padding-top: 5px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgba(128, 128, 128, 0.801);
+    }
+    
+    .card{
+        margin-top:40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+        text-align: center;
+        background:white;
+        border: 1px solid;
+        border-radius: 12px;
+    } 
+    
+    .paragrafo2{
+        padding: 0;
+        margin-top: 15px;
+        margin-left: 40px;
+        margin-right: 40px;
+        
+    } 
+
+    .card2{
+        margin-top:40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 0;
+        text-align: center;
+        background:white;
+        border: 1px solid;
+        border-radius: 12px;
+    }
+
+    .card3{
+        margin-top:40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        padding: 0;
+        text-align: center;
+        background:white;
+        border: 1px solid;
+        border-radius: 12px;
+    }
+}
