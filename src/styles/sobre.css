@@ -59,6 +59,7 @@
 /* Tabela */
 .table-container{
     display: flex;
+    margin-bottom:32px;
     flex-direction: column;
     align-items: center;
     width: 100%;
