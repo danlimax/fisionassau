@@ -33,7 +33,6 @@
 
 .img2{
     border-radius: 32px;
-    width: 400px;
 }
 
 .img3{
@@ -65,17 +64,8 @@
 }
 
 
-.paragrafo{
-    font-weight: 500;
-    padding:50px;
 
-}
-.paragrafo3{
- 
-    padding:50px;
-    text-align: end;
-    
-}
+
 .back{
     background-color: #c7c6c6;
     display: flex;
@@ -92,6 +82,8 @@
 
 
 footer{
+    display: flex;
+    flex-direction: column;
     background-color: #4BD8D8; 
     height: 110px;
     padding: 20px;
@@ -99,8 +91,15 @@ footer{
     width: 100%;
 }
 
-footer a i{
-    margin-right: 20px;
+
+.social-icons{
+    width: 40px;
+}
+
+
+
+.container-footer{
+    display: flex;
 }
 
 /* Estilos para telas menores (responsivo) */
@@ -113,15 +112,38 @@ footer a i{
             flex-direction: row;
             justify-content: space-around;
         }
+        .img1{
+            width: 300px;
+        }
         .conteudo{
             flex-direction: column;
             align-items: center;
         }
         .conteudo1{
-            width: 60%;
+            width: 63%;
+            margin-bottom: 64px;
+        }
+        .paragrafo{
+            padding: 32px;
+           }
+        .paragrafo3{
+ 
+            padding:50px;
+            text-align: end;
+            
+        }
+        .img2{
+            width: 400px;
+            height: 300px;
         }
         .conteudo2{
-            width: 60%;
+            width: 63%;
+            margin-top: 64px;
+            margin-bottom: 64px;
+        }
+        .img3{
+            width: 400px;
+            height: 300px;
         }
         .conteudo-texto{
            flex-direction: column;
@@ -129,127 +151,85 @@ footer a i{
         }
 
         .conteudo-texto p{
-            font-size: 1.3em;
-        }
-        
-        .img1{
-            width: 300px;
-           
-        }
+            font-size: 1.3vw;
+        }       
         .back{
             width: 100%;
             justify-content: space-evenly;
         }
 }
+
+
 @media screen and (max-width: 949px) {
    .menu-icon{
     width: 40px;
     height: 40px;
    }
+   .nav-container{
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+   .img1{
+    width: 300px;
+   }
+   .conteudo{
+    flex-direction: column;
+   }
+   .conteudo1{
+    flex-direction: column-reverse;
+    align-items: center;
+   }
+   .conteudo2{
+    flex-direction: column;
+    align-items: center;
+   }
+   .conteudo-texto{
+    flex-direction: column;
+    align-items: center;
+   }
+   .img2{
+    width: 300px;
+   }
+   
    .navbar-list{
     display: none;
-   }     
+   } 
+   
+   .back{
+    flex-direction: column;
+    align-items: center;
+}
 }
 @media screen and (max-width: 375px) {  
    
 
     .conteudo1{
-        margin-left: 5px;
-        margin-right: 20px  ;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .conteudo2{
-        margin-left: 5px;
-        margin-right: 20px  ;
         flex-direction: column;
     }
 
     .img2{
-        margin-top: 10px;
-        margin-left: 20px;
+       width: 100%;
     }
 
     .img3{
-        margin-top: 10px;
-        margin-left: 20px;
+        width: 100%;
     }
 
     .conteudo{
-        height: 600px;
-        padding: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         align-items: center;
     }
 
-    .titulo1{
-        position: absolute;
-        top:120px;
-        left: 80px;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
-
-    .titulo2{
-        text-align: center;
-        margin-top: 5px;
-        margin-bottom: 1px;
-
-    }
-
-    .paragrafo{
-        text-align: center;
-        margin-top: 20px;
-        margin-left: 15px;
-        margin-bottom: 30px;
-    }
-
     .back{
-        padding-top: 5px;
-        padding-bottom: 30px;
-        padding-left: 20px;
-        padding-right: 20px;
-        background-color: rgba(128, 128, 128, 0.801);
+        flex-direction: column;
     }
-    
-    .card{
-        margin-top:40px;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 0;
-        text-align: center;
-        background:white;
-        border: 1px solid;
-        border-radius: 12px;
-    } 
-    
-    .paragrafo2{
-        padding: 0;
-        margin-top: 15px;
-        margin-left: 40px;
-        margin-right: 40px;
-        
-    } 
+   
 
-    .card2{
-        margin-top:40px;
-        margin-left: 20px;
-        margin-right: 20px;
-        padding: 0;
-        text-align: center;
-        background:white;
-        border: 1px solid;
-        border-radius: 12px;
-    }
-
-    .card3{
-        margin-top:40px;
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-bottom: 10px;
-        padding: 0;
-        text-align: center;
-        background:white;
-        border: 1px solid;
-        border-radius: 12px;
-    }
+    
 }
