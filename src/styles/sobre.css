@@ -114,7 +114,7 @@ footer{
         justify-content: center;
     }
     .info-card{
-        align-self: flex-end;
+        
         padding: 16px;
     }
     .info-card ul{
@@ -131,7 +131,7 @@ footer{
     }
     .card-image{
         width: 350px;
-        margin: 32px;
+        margin: 0 0 0 32px
     }
     .img1{
         width: 300px;
