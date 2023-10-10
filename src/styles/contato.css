@@ -1,10 +1,9 @@
 /* Navegação */
 .nav-container{
     display: flex;
-    position: fixed;
+   
     width: 100%;
     background-color: #FFFF;
-    z-index: 9999;
 }
 
 .navbar-list{
@@ -54,8 +53,6 @@ form{
 footer{
     display: flex;
     flex-direction: column;
-    position: absolute;
-    bottom: 0%;
     background-color: #4BD8D8;
     padding: 20px;
     text-align: center;
@@ -69,6 +66,9 @@ footer{
 
 .container-footer{
     display: flex;
+}
+main{
+    padding:64px;
 }
 @media(min-width: 950px){
     .content-container{
