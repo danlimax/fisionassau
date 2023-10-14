@@ -144,9 +144,26 @@ footer{
         height: 40px;
     }
     .nav-container{
+        flex-direction: column;
         align-items: center;
-        justify-content: space-around;
     }
+        .nav-img{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar{
+            width: 100%;
+        }
+       .navbar-list{
+        width: 100%;
+        flex-direction: column;
+       } 
+       .navbar-list li{
+        width: 100%;
+        margin: 0;
+       }
     .img1{
         width: 300px;
        
@@ -180,9 +197,7 @@ footer{
         text-align: center;
         list-style-type: none;
     }
-    .navbar-list{
-        display: none;
-    }
+   
 }
 @media(max-width: 375px){
     .nav-container{
@@ -224,9 +239,6 @@ footer{
     }
     .content-container{
         flex-direction: column;
-    }
-    .navbar-list{
-        display: none;
     }
     .img1{
         width: 245px;
