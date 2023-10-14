@@ -1,7 +1,8 @@
 /* Navegação */
 .nav-container{
     display: flex;
-   
+   position: fixed;
+   z-index: 9999;
     width: 100%;
     background-color: #FFFF;
 }
@@ -67,11 +68,10 @@ footer{
 .container-footer{
     display: flex;
 }
-main{
-    padding:64px;
-}
+
 @media(min-width: 950px){
     .content-container{
+        height: 100vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
