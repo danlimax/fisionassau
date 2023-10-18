@@ -23,10 +23,19 @@
             src="./img/fisioNassau01.png"
             alt="Logo clicável para a homepage fisionassau"
         /></a>
-        <img src="./assets/bars-solid.svg" class="menu-icon" alt="" />
+        <img
+          src="./assets/bars-solid.svg"
+          class="menu-icon"
+          alt="Menu de navegação mobile"
+        />
+        <img
+          src="./assets/xmark-solid.svg"
+          class="menu-icon close-menu"
+          alt="Botão para fechamento de menu de navegação mobile"
+        />
       </div>
       <nav class="navbar">
-        <ul class="navbar-list">
+        <ul class="navbar-list close-navbar">
           <li><a class="efeito" href="./index.html">INICIO</a></li>
 
           <li><a class="efeito" href="./sobre.html">SOBRE</a></li>
@@ -160,5 +169,25 @@
       <p>Lucas Danniel da Silva</p>
       <p>Pedro Lucas Faustino Gois</p>
     </footer>
+    <script>
+      (() => {
+        const menuIcons = document.querySelectorAll(".menu-icon");
+        const navList = document.querySelector(".navbar-list");
+        menuIcons[0].addEventListener("click", function () {
+          if (!menuIcons[0].classList.contains("open-menu")) {
+            menuIcons[0].classList.add("open-menu");
+            menuIcons[1].classList.remove("close-menu");
+            navList.classList.remove("close-navbar");
+          }
+        });
+        menuIcons[1].addEventListener("click", function () {
+          if (!menuIcons[1].classList.contains("close-menu")) {
+            menuIcons[0].classList.remove("open-menu");
+            menuIcons[1].classList.add("close-menu");
+            navList.classList.add("close-navbar");
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

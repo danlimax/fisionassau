@@ -154,9 +154,10 @@ footer {
     width: 40px;
     height: 40px;
   }
-  #open-menu {
+  .open-menu {
+    display: none;
   }
-  #close-menu {
+  .close-menu {
     display: none;
   }
   .nav-container {
@@ -189,6 +190,8 @@ footer {
   .navbar-list {
     width: 100%;
     flex-direction: column;
+  }
+  .close-navbar {
     display: none;
   }
   .navbar-list li {
