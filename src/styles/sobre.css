@@ -1,251 +1,244 @@
 /* Navegação */
-.nav-container{
-    background-color: #FFFF;
-    display: flex;
-    position: fixed;
-    width: 100%;
-    z-index: 9999;
+.nav-container {
+  background-color: #ffff;
+  display: flex;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
-.navbar-list{
-    display: flex;
-    list-style-type: none;
-    text-align: center;
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
 }
 
-.navbar-list li{
-    margin-right: 16px;
+.navbar-list li {
+  margin-right: 16px;
 }
 
-.navbar-list li a{
-    color: #06c4b4; /* Cor do texto dos links */
-    font-weight: bold;
-    text-decoration: none;
-    transition: ease-in 0.2s
+.navbar-list li a {
+  color: #06c4b4; /* Cor do texto dos links */
+  font-weight: bold;
+  text-decoration: none;
+  transition: ease-in 0.2s;
 }
 
-.navbar-list li a:hover{
-    border-bottom: 3px solid #5D6BE7 ;
-    color: #5D6BE7;
+.navbar-list li a:hover {
+  border-bottom: 3px solid #5d6be7;
+  color: #5d6be7;
 }
-
 
 /* Container de conteúdo */
-.content-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 /* Cards de informações */
-.info-container{
-    display: flex;
-   width: 100%; 
-   margin-bottom: 32px;
+.info-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 32px;
 }
-.info-card{
-    -moz-box-shadow: 0px 5px 12px 2px rgba(0,0,0,0.4);
-    -webkit-box-shadow: 0px 5px 12px 2px rgba(0,0,0,0.4);
-    border-radius: 32px;
-    box-shadow: 0px 5px 12px 2px rgba(0,0,0,0.4);
-    display: flex;
+.info-container:nth-child(1) {
+  margin-top: 32px;
 }
-.info-container h1{
-    margin-bottom: 32px;
-    margin-top: 16px;
-    text-align: center;
+.info-card {
+  -moz-box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 32px;
+  box-shadow: 0px 5px 12px 2px rgba(0, 0, 0, 0.4);
+  display: flex;
+}
+.info-container h1 {
+  margin-bottom: 32px;
+  margin-top: 16px;
+  text-align: center;
 }
 
 /* Tabela */
-.table-container{
-    display: flex;
-    margin-bottom:32px;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.table-container {
+  display: flex;
+  margin-bottom: 32px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-.tabela-de-horarios{
-    
-    border: 1px solid #000;
-    text-align: center;
+.tabela-de-horarios {
+  border: 1px solid #000;
+  text-align: center;
 }
-.tabela-de-horarios thead th{
-    border: 1px solid #000;
+.tabela-de-horarios thead th {
+  border: 1px solid #000;
 }
 
-.tabela-de-horarios tbody tr td{
-    border: 1px solid #000;
+.tabela-de-horarios tbody tr td {
+  border: 1px solid #000;
 }
 
 /* Footer */
-footer{
-    display: flex;
-    flex-direction: column;
-    background-color: #4BD8D8; 
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #4bd8d8;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
 }
 
-
-.social-icons{
-    width: 40px;
+.social-icons {
+  width: 40px;
 }
 
-
-
-.container-footer{
-    display: flex;
+.container-footer {
+  display: flex;
 }
 /* Responsividade */
-@media(min-width: 950px){
-    .content-container{
-        align-items: center;
-        justify-content: center;
-    }
-    .info-card{
-        flex-direction: column;
-        width: 600px;
-    }
-    .menu-icon{
-        display: none;
-    }
-    .info-container{
-        justify-content: center;
-    }
-    .info-card{
-        
-        padding: 16px;
-    }
-    .info-card ul{
-        text-align: center;
-        list-style-type: none;
-    }
-    .tabela-de-horarios{
-        width: 600px;
-    }
-    .nav-container{
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .card-image{
-        width: 350px;
-        margin: 0 0 0 32px
-    }
-    .img1{
-        width: 300px;
-       
-    }
+@media (min-width: 950px) {
+  .content-container {
+    align-items: center;
+    justify-content: center;
+  }
+  .info-card {
+    flex-direction: column;
+    width: 600px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .info-container {
+    justify-content: center;
+  }
+  .info-card {
+    padding: 16px;
+  }
+  .info-card ul {
+    text-align: center;
+    list-style-type: none;
+  }
+  .tabela-de-horarios {
+    width: 600px;
+  }
+  .nav-container {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .card-image {
+    width: 350px;
+    margin: 0 0 0 32px;
+  }
+  .img1 {
+    width: 300px;
+  }
 }
-@media(max-width:949px){
-    .menu-icon{
-        width: 40px;
-        height: 40px;
-    }
-    .nav-container{
-        flex-direction: column;
-        align-items: center;
-    }
-        .nav-img{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navbar{
-            width: 100%;
-        }
-       .navbar-list{
-        width: 100%;
-        flex-direction: column;
-       } 
-       .navbar-list li{
-        width: 100%;
-        margin: 0;
-       }
-    .img1{
-        width: 300px;
-       
-    }
-    .content-container{
-        
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .card-image{
-        width: 355px;
-        margin-bottom: 32px;
-    }
-    .tabela-de-horarios{
-        width: 85%;
-    }
-    .info-container{
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-    .info-container p{
-        text-align: center;
-        font-size: 1em;
-        padding: 16px;
-    }
-    .info-card{
-        width: 85%;
-        flex-direction: column;
-    }
-    .info-card ul {
-        text-align: center;
-        list-style-type: none;
-    }
-   
+@media (max-width: 949px) {
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar-list {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-list li {
+    width: 100%;
+    margin: 0;
+  }
+  .img1 {
+    width: 300px;
+  }
+  .content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .card-image {
+    width: 355px;
+    margin-bottom: 32px;
+  }
+  .tabela-de-horarios {
+    width: 85%;
+  }
+  .info-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .info-container p {
+    text-align: center;
+    font-size: 1em;
+    padding: 16px;
+  }
+  .info-card {
+    width: 85%;
+    flex-direction: column;
+  }
+  .info-card ul {
+    text-align: center;
+    list-style-type: none;
+  }
 }
-@media(max-width: 375px){
-    .nav-container{
-        align-items: center;
-        justify-content: space-around;
-    }
-    .menu-icon{
-        width: 40px;
-        height: 40px;
-    }
-    /* .menu-icon:target{
+@media (max-width: 375px) {
+  .nav-container {
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+  /* .menu-icon:target{
         
     } */
 
-    .content-container{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-   .info-container{
+  .content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .info-container {
     flex-direction: column-reverse;
-   }
-   .info-card:nth-child(1){
+  }
+  .info-card:nth-child(1) {
     padding: 16px;
-   }
-   .info-card{
+  }
+  .info-card {
     width: 100%;
-   }
-    .info-card p{
-        text-align: center;
-        font-size: 1em;
-        padding: 16px;
-    }
-    .info-card ul {
-        text-align: center;
-        list-style-type: none;
-    }
-    .tabela-de-horarios{
-        width: 100%;
-    }
-    .content-container{
-        flex-direction: column;
-    }
-    .img1{
-        width: 245px;
-       
-    }
-    .card-image{
-        width: 100%;
-        margin-bottom: 32px;
-    }
+  }
+  .info-card p {
+    text-align: center;
+    font-size: 1em;
+    padding: 16px;
+  }
+  .info-card ul {
+    text-align: center;
+    list-style-type: none;
+  }
+  .tabela-de-horarios {
+    width: 100%;
+  }
+  .content-container {
+    flex-direction: column;
+  }
+  .img1 {
+    width: 245px;
+  }
+  .card-image {
+    width: 100%;
+    margin-bottom: 32px;
+  }
 }

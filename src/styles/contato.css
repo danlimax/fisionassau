@@ -1,198 +1,191 @@
 /* Navegação */
-.nav-container{
-    display: flex;
-   position: fixed;
-   z-index: 9999;
-    width: 100%;
-    background-color: #FFFF;
+.nav-container {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: #ffff;
 }
 
-.navbar-list{
-    display: flex;
-    list-style-type: none;
-    text-align: center;
+.navbar-list {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
 }
 
-.navbar-list li{
-    margin-right: 16px;
+.navbar-list li {
+  margin-right: 16px;
 }
 
-.navbar-list li a{
-    text-decoration: none;
-    color: #06c4b4; /* Cor do texto dos links */
-    font-weight: bold;
-    transition: ease-in 0.2s
+.navbar-list li a {
+  text-decoration: none;
+  color: #06c4b4; /* Cor do texto dos links */
+  font-weight: bold;
+  transition: ease-in 0.2s;
 }
 
-.navbar-list li a:hover{
-    color: #5D6BE7;
-    border-bottom: 3px solid #5D6BE7 ;
+.navbar-list li a:hover {
+  color: #5d6be7;
+  border-bottom: 3px solid #5d6be7;
 }
 
 /* Conteúdo */
-.content-container{
-    display: flex;
-    width: 100%;
+.content-container {
+  display: flex;
+  width: 100%;
 }
-.form-container{
-    display: flex;
-    width: 60%;
-    background-color: #D9D9D9;
-}
-
-form{
-    width: 100%;
-}
-.form-container form textarea{
-    height: 200px;
-    resize: none;
-}
-.contact-container{
-    display: flex;
+.form-container {
+  display: flex;
+  width: 60%;
+  background-color: #d9d9d9;
 }
 
-footer{
-    display: flex;
+form {
+  width: 100%;
+}
+.form-container form textarea {
+  height: 200px;
+  resize: none;
+}
+.contact-container {
+  display: flex;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #4bd8d8;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.social-icons {
+  width: 40px;
+}
+
+.container-footer {
+  display: flex;
+}
+
+@media (min-width: 950px) {
+  .content-container {
+    height: 100vh;
     flex-direction: column;
-    background-color: #4BD8D8;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
+    align-items: center;
+  }
+  .contact-container {
+    flex-direction: column;
+    padding: 64px;
+  }
+  .form-container {
+    justify-content: center;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .tabela-de-horarios {
+    width: 30%;
+  }
+  .nav-container {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .img1 {
+    width: 300px;
+  }
 }
-
-
-.social-icons{
+@media (max-width: 949px) {
+  .menu-icon {
     width: 40px;
-}
-
-.container-footer{
+    height: 40px;
+  }
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-img {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar {
+    width: 100%;
+  }
+  .navbar-list {
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-list li {
+    width: 100%;
+    margin: 0;
+  }
+  .form-container {
+    justify-content: center;
+  }
+  .img1 {
+    width: 300px;
+  }
+  .content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+  }
+  .info-container p {
+    text-align: center;
+    font-size: 1em;
+    padding: 16px;
+  }
+  .info-card ul {
+    text-align: center;
+  }
 }
-
-@media(min-width: 950px){
-    .content-container{
-        height: 100vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .contact-container{
-        flex-direction: column;
-        padding: 64px;
-    }
-    .form-container{
-        
-        justify-content: center;
-    }
-    .menu-icon{
-        display: none;
-    }
-    .tabela-de-horarios{
-        width: 30%;
-    }
-    .nav-container{
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .img1{
-        width: 300px;
-       
-    }
-}
-@media(max-width:949px){
-    .menu-icon{
-        width: 40px;
-        height: 40px;
-    }
-    .contact-container{
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-container{
-        flex-direction: column;
-        align-items: center;
-    }
-        .nav-img{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-        .navbar{
-            width: 100%;
-        }
-       .navbar-list{
-        width: 100%;
-        flex-direction: column;
-       } 
-       .navbar-list li{
-        width: 100%;
-        margin: 0;
-       }
-    .form-container{
-        justify-content: center;
-    }
-    .img1{
-        width: 300px;
-       
-    }
-    .content-container{
-        padding-left: 10px;
-        padding-right: 10px;
-        justify-content: center;
-    }
-    .info-container p{
-        text-align: center;
-        font-size: 1em;
-        padding: 16px;
-    }
-    .info-card ul {
-        text-align: center;
-    }
-   
-}
-@media(max-width: 375px){
-    .nav-container{
-        align-items: center;
-        justify-content: space-around;
-    }
-    .menu-icon{
-        width: 40px;
-        height: 40px;
-    }
-    /* .menu-icon:target{
+@media (max-width: 375px) {
+  .nav-container {
+    align-items: center;
+    justify-content: space-around;
+  }
+  .menu-icon {
+    width: 40px;
+    height: 40px;
+  }
+  /* .menu-icon:target{
         
     } */
 
-    .content-container{
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .info-container p{
-        text-align: center;
-        font-size: 1em;
-        padding: 16px;
-    }
-    .info-card ul {
-        text-align: center;
-    }
-    .form-container{
-        width: 100%;
-        
-    }
-    form{
-        width: 100%;
-    }
-    .tabela-de-horarios{
-        width: 100%;
-    }
-    .content-container{
-        flex-direction: column;
-    }
-    
-    .img1{
-        width: 245px;
-       
-    }
+  .content-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .info-container p {
+    text-align: center;
+    font-size: 1em;
+    padding: 16px;
+  }
+  .info-card ul {
+    text-align: center;
+  }
+  .form-container {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  .tabela-de-horarios {
+    width: 100%;
+  }
+  .content-container {
+    flex-direction: column;
+  }
+
+  .img1 {
+    width: 245px;
+  }
 }
